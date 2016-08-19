@@ -1,6 +1,6 @@
 # Loggregator Emitter 
 
-[![Build Status](https://travis-ci.org/cloudfoundry/loggregator_emitter.svg?branch=master)](https://travis-ci.org/cloudfoundry/loggregator_emitter) [![Coverage Status](https://coveralls.io/repos/cloudfoundry/loggregator_emitter/badge.svg?branch=master)](https://coveralls.io/r/cloudfoundry/loggregator_emitter?branch=master) [![Gem Version](https://badge.fury.io/rb/loggregator_emitter.svg)](http://badge.fury.io/rb/loggregator_emitter)
+[![Build Status](https://travis-ci.org/kitemongerer/loggregator_emitter.svg?branch=master)](https://travis-ci.org/kitemongerer/loggregator_emitter) [![Coverage Status](https://coveralls.io/repos/kitemongerer/loggregator_emitter/badge.svg?branch=master)](https://coveralls.io/r/kitemongerer/loggregator_emitter?branch=master) [![Gem Version](https://badge.fury.io/rb/loggregator_emitter.svg)](http://badge.fury.io/rb/loggregator_emitter)
 
 ### About
 
@@ -41,7 +41,7 @@ Call emit() or emit_error() on this emitter with the application GUID and the me
 
 ### Regenerating Protobuf library
 
-BEEFCAKE_NAMESPACE=Sonde protoc --beefcake_out lib/sonde -I ~/workspace/cf-release/src/loggregator/src/github.com/cloudfoundry/sonde-go/definitions/events ~/workspace/cf-release/src/loggregator/src/github.com/cloudfoundry/sonde-go/definitions/events/envelope.proto
+BEEFCAKE_NAMESPACE=Sonde protoc --beefcake_out lib/sonde -I ~/workspace/cf-release/src/loggregator/src/github.com/kitemongerer/sonde-go/definitions/events ~/workspace/cf-release/src/loggregator/src/github.com/kitemongerer/sonde-go/definitions/events/envelope.proto
 
 ### Versioning
 
