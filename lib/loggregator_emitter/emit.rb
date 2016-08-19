@@ -16,7 +16,8 @@ module LoggregatorEmitter
       @host, @port = loggregator_server.split(/:([^:]*$)/)
 
       raise ArgumentError, "Must provide valid loggregator server: #{loggregator_server}" if !valid_hostname || !valid_port
-      @host = ::Resolv.getaddresses(@host).last
+      print ::Resolv.getaddresses(@host)
+      @host = ::Resolv.getaddresses(@host).first
       raise ArgumentError, "Must provide valid loggregator server: #{loggregator_server}" unless @host
 
       raise ArgumentError, "Must provide a valid origin" unless origin
